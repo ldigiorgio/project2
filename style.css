@@ -19,14 +19,12 @@ body{
 .nav ul{
   list-style-type: none;
   display: block;
-  margin-top: 30px;
-  margin-right: 30px;
 }
 
 .nav li{
   float: right;
   margin: 10px;
-  font-family: 'avenir' sans-serif;
+  font-family: 'avenir', sans-serif;
   font-size: 20px;
 }
 
@@ -44,124 +42,91 @@ body{
 
 .button ul{
   list-style-type: none;
-  display: block;
   margin: 0 auto;
-  padding-top: 150px;
-  max-width: 480px;
-  width: 100%;
   text-align: center;
   color: white;
-  line-height: 650%;
-  overflow: auto;
+  line-height: 600%;
+  padding-top: 10%;
 }
 
 .button li{
   margin: 10px;
   font-family: 'Milkshake' sans-serif;
-  font-size: 100px;
+  font-size: 50px;
+}
+
+h1 {
+  display: block;
+  text-align: center;
+  margin-top: 20%;
+  color: white;
+  font-family: 'avenir', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+p {
+  display: block;
+  text-align: center;
+  color: white;
+  font-family: 'avenir' sans-serif;
+  font-size: 15px;
+  max-width: 70%;
+  margin: auto;
+  padding-bottom: 7%;
+}
+
+img.box {
+  display: block;
+  margin: auto;
+  padding-top: 7%;
+  padding-bottom: 7%;
+  width: 70%;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-content: center;
-  margin: 40%;
-  max-width: 480px;
   width: 100%;
-  overflow: auto;
 }
 
-/*margin was 200px*/
-
-.container h1 {
+.container a {
   color: white;
-  font-family: 'avenir' sans-serif;
-  font-size: 40px;
+  text-decoration: none;
+  font-family: 'avenir', sans-serif;
+  font-size: 25px;
   font-weight: normal;
-  margin: 40%;
-  margin: 40%;
-  max-width: 480px;
-  width: 100%;
-
-  /*margin was 0 auto*/
-
+  margin: 0 auto;
+  padding-top: 3%;
 }
 
 .container p {
   color: white;
-  font-family: 'avenir' sans-serif;
-  font-size: 30px;
-  height: 10px;
-  width: 90%;
-  align-content: space-between;
-  margin-top: 5%;
+  font-family: 'avenir', sans-serif;
+  font-size: 15px;
+  margin: 0 auto;
+  padding: 5%;
 }
-
-/*margin top was 50px*/
-
-.container box{
-  margin: 5%;
-  padding: 2%;
-}
-
-/*margin was 30px and padding was 20px*/
 
 .container2 {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   align-items: center;
-  align-content: center;
-  margin: 2%;
-  max-width: 480px;
-  width: 100%;
-}
-
-/*margin was 200px*/
-
-.container2 a {
-  color: white;
-  text-decoration: none;
-  font-family: 'avenir' sans-serif;
-  font-size: 60px;
-  font-weight: normal;
-  margin: 0 auto;
-}
-
-.container2 p {
-  color: white;
-  font-family: 'avenir' sans-serif;
-  font-size: 30px;
-  height: 10px;
-  width: 100%;
-  max-width: 480px;
-  align-content: space-between;
-  margin-top: 5%;
-}
-
-/*margin-top was 50px*/
-
-.container3{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
   flex-grow: 1;
-  width: 100%;
-  max-width: 480px;
 }
 
-@media (min-width: 480px) and (max-width: 720px) {
+@media (min-width: 480px) {
 
   .button ul{
-    list-style-type: none;
-    display: block;
-    margin: 0 auto;
-    padding-top: 150px;
-    width: 50%;
-    text-align: center;
-    color: white;
-    line-height: 650%;
-    overflow: auto;
+    width: 100%;
+    max-width: 480px;
+  }
+
+  .button li{
+    font-size: 75px;
   }
 
   .nav ul{
@@ -171,103 +136,32 @@ body{
     margin-right: 5%;
   }
 
-/*add in here for the other 2 pages (all the "containers")*/
+  h1 {
+    font-size: 30px;
+  }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  margin: 45%;
-  width: 100%;
-  overflow: auto;
-}
+  p {
+    font-size: 25px;
+  }
 
-/*margin was 200px*/
+  .container a {
+    font-size: 35px;
+  }
 
-.container h1 {
-  color: white;
-  font-family: 'avenir' sans-serif;
-  font-size: 40px;
-  font-weight: normal;
-  margin: 45%;
-
-  /*margin was 0 auto*/
+  .container p {
+    font-size: 25px;
+  }
 
 }
 
-.container p {
-  color: white;
-  font-family: 'avenir' sans-serif;
-  font-size: 30px;
-  height: 10px;
-  width: 85%;
-  align-content: space-between;
-  margin-top: 7.5%;
-}
-
-/*margin top was 50px*/
-
-.container box{
-  margin: 7.5%;
-  padding: 5%;
-}
-/*margin was 30px and padding was 20px*/
-
-.container2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  margin: 5%;
-  width: 90%;
-}
-
-/*margin was 200px*/
-
-.container2 a {
-  color: white;
-  text-decoration: none;
-  font-family: 'avenir' sans-serif;
-  font-size: 60px;
-  font-weight: normal;
-  margin: 0 auto;
-}
-
-.container2 p {
-  color: white;
-  font-family: 'avenir' sans-serif;
-  font-size: 30px;
-  height: 10px;
-  width: 90%;
-  align-content: space-between;
-  margin-top: 7.5%;
-}
-
-/*margin-top was 50px*/
-
-.container3{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  flex-grow: 1;
-  width: 90%;
-}
-
-}
-
-@media (min-width: 720px) and (max-width: 1024px) {
+@media (min-width: 720px) {
 
 .button ul{
-  list-style-type: none;
-  display: block;
-  margin: 0 auto;
-  padding-top: 150px;
-  width: 45%;
-  text-align: center;
-  color: white;
-  line-height: 650%;
-  overflow: auto;
+  max-width: 576px;
+}
+
+.button li{
+  font-size: 90px;
 }
 
 .nav ul{
@@ -277,86 +171,55 @@ body{
   margin-right: 7.5%;
 }
 
-/*add in here for the other 2 pages (all the "containers")*/
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  margin: 40%;
-  width: 100%;
-  overflow: auto;
+h1 {
+  font-size: 40px;
 }
 
-/*margin was 200px*/
+p {
+  font-size: 35px;
+}
 
-.container h1 {
-  color: white;
-  font-family: 'avenir' sans-serif;
-  font-size: 40px;
-  font-weight: normal;
-  margin: 40%;
-
-  /*margin was 0 auto*/
-
+.container a {
+  font-size: 45px;
 }
 
 .container p {
-  color: white;
-  font-family: 'avenir' sans-serif;
-  font-size: 30px;
-  height: 10px;
-  width: 80%;
-  align-content: space-between;
-  margin-top: 10%;
-}
-
-/*margin top was 50px*/
-
-.container box{
-  margin: 10%;
-  padding: 7.5%;
+  font-size: 35px;
 }
 
 .container2 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  margin: 7.5%;
-  width: 80%;
-}
-
-/*margin was 200px*/
-
-.container2 a {
-  color: white;
-  text-decoration: none;
-  font-family: 'avenir' sans-serif;
-  font-size: 60px;
-  font-weight: normal;
-  margin: 0 auto;
-}
-
-.container2 p {
-  color: white;
-  font-family: 'avenir' sans-serif;
-  font-size: 30px;
-  height: 10px;
-  width: 80%;
-  align-content: space-between;
-  margin-top: 10%;
-}
-
-/*margin-top was 50px*/
-
-.container3{
-  display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   flex-grow: 1;
-  width: 80%;
+}
+
+.foamroller:hover{
+  transform: scale(1.15);
+}
+
+.magnesium:hover{
+  transform: scale(1.15);
+}
+
+.succulent:hover{
+  transform: scale(1.15);
+}
+
+.egyptianbox:hover{
+  transform: scale(1.15);
+}
+
+.sage:hover{
+  transform: scale(1.15);
+}
+
+.buddha:hover{
+  transform: scale(1.15);
+}
+
+.lavenderoil:hover{
+  transform: scale(1.15);
 }
 
 }
@@ -364,15 +227,11 @@ body{
 @media (min-width: 1024px) {
 
   .button ul{
-    list-style-type: none;
-    display: block;
-    margin: 0 auto;
-    padding-top: 150px;
-    width: 40%;
-    text-align: center;
-    color: white;
-    line-height: 650%;
-    overflow: auto;
+    max-width: 614px;
+  }
+
+  .button li{
+    font-size: 100px;
   }
 
   .nav ul{
@@ -382,87 +241,27 @@ body{
     margin-right: 10%;
   }
 
-  /*add in here for the other 2 pages (all the "containers")*/
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    margin: 35%;
-    width: 100%;
-    overflow: auto;
+  h1 {
+    font-size: 50px;
   }
 
-  /*margin was 200px*/
+  p {
+    font-size: 45px;
+  }
 
-  .container h1 {
-    color: white;
-    font-family: 'avenir' sans-serif;
-    font-size: 40px;
-    font-weight: normal;
-    margin: 35%;
-
-    /*margin was 0 auto*/
-
+  .container a {
+    font-size: 55px;
   }
 
   .container p {
-    color: white;
-    font-family: 'avenir' sans-serif;
-    font-size: 30px;
-    height: 10px;
-    width: 75%;
-    align-content: space-between;
-    margin-top: 12.5%;
-
-  }
-
-  /*margin top was 50px*/
-
-  .container box{
-    margin: 12.5%;
-    padding: 10%;
+    font-size: 45px;
   }
 
   .container2 {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    margin: 15%;
-    width: 60%;
-  }
-
-  /*margin was 200px*/
-
-  .container2 a {
-    color: white;
-    text-decoration: none;
-    font-family: 'avenir' sans-serif;
-    font-size: 60px;
-    font-weight: normal;
-    margin: 0 auto;
-  }
-
-  .container2 p {
-    color: white;
-    font-family: 'avenir' sans-serif;
-    font-size: 30px;
-    height: 10px;
-    width: 60%;
-    align-content: space-between;
-    margin-top: 15%;
-  }
-
-  /*margin-top was 50px*/
-
-  .container3{
-    display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     flex-grow: 1;
-    width: 100%;
   }
 
   .foamroller:hover{
